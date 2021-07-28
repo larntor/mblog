@@ -1,13 +1,13 @@
-# lindexi
+# mblog
 
-林德熙
+larntor
 
 Windows Development MVP
 
 微软最具价值专家
 
-Blog: [https://blog.lindexi.com/](https://blog.lindexi.com/)  
-CSDN: [https://lindexi.blog.csdn.net/](https://lindexi.blog.csdn.net/)
+Blog: [https://blog.mblog.com/](https://blog.mblog.com/)  
+CSDN: [https://mblog.blog.csdn.net/](https://mblog.blog.csdn.net/)
 
 
-![](https://github-readme-stats.vercel.app/api?username=lindexi&show_icons=true)
+![](https://github-readme-stats.vercel.app/api?username=larntor&show_icons=true)
