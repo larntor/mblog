@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 关于林德熙
-display_title: 林德熙
+title: 关于larntor
+display_title: larntor
 permalink: /about/
 ---
 
@@ -33,7 +33,7 @@ StackOverflow UWP 全球排名 Top 5%, C# 全球排名 Top 10% 回答者
 
 ![](http://image.acmx.xyz/lindexi%2F2020529838224258.jpg)
 
-### 2019 腾讯云+社区年度最佳作者 
+### 2019 腾讯云+社区年度最佳作者
 
 排名147名
 
