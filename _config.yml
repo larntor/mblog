@@ -1,11 +1,11 @@
-title: 林德熙
-description: Windows 10 App Developer
-author: lindexi
-post_author: 林德熙
+title: larnt's log
+description: my blog
+author: larntor
+post_author: larntor
 logo: /img/avatar.png
-github: https://github.com/lindexi
+github: https://github.com/larntor
 about: Windows 10 App Developer
-mail: "lindexi_gd@outlook.com"
+mail: "larntor@outlook.com"
 
 baseurl: ""
 url: "https://blog.lindexi.com"
@@ -15,10 +15,10 @@ allowsearch: false
 analytics:
   google: UA-110214503-1
 disqus:
-  name: lindexi
+  name: larntor
 
 share:
-  twitter_username: lindexi_gd
+  twitter_username: larntor
 
 
 enableTags: true
@@ -47,12 +47,12 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "林德熙"
+      author: "larntor"
       permalink: "/post/:title.html"
   - scope:
       path: "_articles"
       type: "articles"
     values:
       layout: "post"
-      author: "林德熙"
+      author: "larntor"
       permalink: "/article/:title.html"
