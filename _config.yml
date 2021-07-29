@@ -1,9 +1,58 @@
-markdown: rdiscount
-permalink: /post/:title/
-author: lindexi
-url: /lindexi
-paginate: 30
-gems: [jekyll-paginate]
+title: larnt's log
+description: my blog
+author: larntor
+post_author: larntor
+logo: /img/avatar.png
+github: https://github.com/larntor
+about: Windows 10 App Developer
+mail: "larntor@outlook.com"
+
+baseurl: ""
+url: "https://larntor.github.io/mblog"
+
+allowsearch: false
+
+analytics:
+  google: UA-110214503-1
+disqus:
+  name: larntor
+
+share:
+  twitter_username: larntor
+
+
+enableTags: true
+tagarray: []
+
 excerpt_separator: "<!--more-->"
-author:
-    name: lindexi
+paginate: 35
+per_page: 60
+paginate_path: "/blog/page:num/"
+kramdown: kramdown
+kramdown:
+   input: GFM
+   hard_wrap: false
+   math_engine: mathjax
+gems: [jekyll-paginate, jekyll-gist]
+
+# Content Collection
+collections:
+  articles:
+    output: true
+
+# Content Template
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+      author: "larntor"
+      permalink: "/post/:title.html"
+  - scope:
+      path: "_articles"
+      type: "articles"
+    values:
+      layout: "post"
+      author: "larntor"
+      permalink: "/article/:title.html"

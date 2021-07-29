@@ -1,0 +1,95 @@
+I"t<p>有时候我们会把一些特殊字体打包到软件，因为如果找不到我们的字体会变为默认，
+现在很多字体图标我们用得好，有时候我们的应用会用很漂亮的字体，需要我们自己打包，
+因为用户一般是没有字体。</p>
+
+<!--more-->
+
+<h2 id="uwp使用第三方字体">UWP使用第三方字体</h2>
+
+<p>首先我们需要字体，这个字体下载，网上很多。<a href="http://font.chinaz.com/">http://font.chinaz.com/</a>我在这网站下载，如果有人知道他的网站字体不是完全授权，请和我说，我就删除我的应用字体。</p>
+
+<p>在网上下东西很要注意版权，有很多是我们不能直接拿来用。</p>
+
+<p>我们简单在界面写一个TextBlock</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+        &lt;TextBlock Margin="10,100,10,10"
+                       Text="Lov ms"&gt;&lt;/TextBlock&gt;
+
+</code></pre></div></div>
+
+<p>然后我们能运行看到一个字“Lov ms”因为我对微软的love没有了最后</p>
+
+<p><img src="http://img.blog.csdn.net/20160918094918630" alt="这里写图片描述" /></p>
+
+<p>为什么在Margin写<code class="language-plaintext highlighter-rouge">10,100,10,10</code>因为上面有黑色会挡住。</p>
+
+<p><img src="http://img.blog.csdn.net/20160918094933677" alt="这里写图片描述" /></p>
+
+<p>我们去掉黑色，删除App.xaml.cs</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#if DEBUG
+            if (System.Diagnostics.Debugger.IsAttached)
+            {
+                this.DebugSettings.EnableFrameRateCounter = true;
+            }
+#endif
+
+</code></pre></div></div>
+
+<p>大家可以看到我们的应用没有特殊字体，这时我们写一个我们系统不存在的字体<code class="language-plaintext highlighter-rouge">And Love St.ttf</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+        &lt;TextBlock Margin="10,100,10,10"
+                   FontFamily="And Love St.ttf"
+                   Text="Lov ms"&gt;&lt;/TextBlock&gt;
+
+</code></pre></div></div>
+
+<p><img src="http://img.blog.csdn.net/20160918094918630" alt="这里写图片描述" /></p>
+
+<p>几乎看不到有变化</p>
+
+<p>我们添加一个文件夹</p>
+
+<p><img src="http://img.blog.csdn.net/20160918095356790" alt="这里写图片描述" /></p>
+
+<p>我把它叫Font</p>
+
+<p>把我们的字体放入，直接拖进去，uwp导入字体是把字体放到解决方案的文件夹</p>
+
+<p><img src="http://img.blog.csdn.net/20160918095623994" alt="这里写图片描述" /></p>
+
+<p>在我们的字体写我们放进去字体，路径#字体名称</p>
+
+<p>我们的路径<code class="language-plaintext highlighter-rouge">Font/And Love St.ttf</code>名称<code class="language-plaintext highlighter-rouge">And Love st</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+        &lt;TextBlock Margin="10,100,10,10"
+                   FontFamily="Font/And Love St.ttf#And Love st"
+                   Text="Lov ms" &gt;&lt;/TextBlock&gt; 
+
+</code></pre></div></div>
+
+<p><img src="http://img.blog.csdn.net/20160918100115278" alt="这里写图片描述" /></p>
+
+<p>参见：http://www.cnblogs.com/mycing/p/5658355.html</p>
+
+<p>当然也可以作为资源</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    &lt;Page.Resources&gt;
+        &lt;FontFamily x:Key="Font" &gt;Font/And Love St.ttf#And Love st&lt;/FontFamily&gt;
+    &lt;/Page.Resources&gt;
+
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+        &lt;TextBlock Margin="10,100,10,10"
+                   FontFamily="Font/And Love St.ttf#And Love st"
+                   Text="Lov ms" &gt;&lt;/TextBlock&gt;
+
+</code></pre></div></div>
+
+<p>本作品采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可。欢迎转载、使用、重新发布，但务必保留文章署名<a href="http://blog.csdn.net/lindexi_gd">林德熙</a>(包含链接:http://blog.csdn.net/lindexi_gd )，不得用于商业目的，基于本文修改后的作品务必以相同的许可发布。如有任何疑问，请与我<a href="mailto:lindexi_gd@163.com">联系</a>。</p>
+:ET

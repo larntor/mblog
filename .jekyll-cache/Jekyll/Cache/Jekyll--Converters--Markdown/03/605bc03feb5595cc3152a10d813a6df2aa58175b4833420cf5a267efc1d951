@@ -1,0 +1,20 @@
+I"M<p><img src="https://blog.lindexi.com/imgs/crack/confluence/keygen.png" alt="confluence-keygen" />
+<img src="https://blog.lindexi.com/imgs/crack/confluence/license.png" alt="confluence-license" /></p>
+
+<p>###crack
+替换密钥</p>
+
+<p>jar uvf atlassian-extras-decoder-v2-3.2.jar com</p>
+
+<p>###配置
+confluence\confluence\WEB-INF\classes
+confluence-init.properties最后一行
+confluence.home = xxx</p>
+
+<p>###汉化
+https://techlife.com.cn/soft/iso/Confluence-5.8.15-language-pack-zh_CN.jar
+放confluence\confluence\WEB-INF\lib</p>
+
+<p>###keygen source
+attach\crack\confluence\xx.7z</p>
+:ET
