@@ -7,8 +7,8 @@ github: https://github.com/larntor
 about: Windows 10 App Developer
 mail: "larntor@outlook.com"
 
-baseurl: ""
-url: "https://blog.lindexi.com"
+baseurl: "https://larntor.github.io/mblog"
+url: "https://larntor.github.io/mblog"
 
 allowsearch: false
 
@@ -28,7 +28,7 @@ excerpt_separator: "<!--more-->"
 paginate: 35
 per_page: 60
 paginate_path: "/blog/page:num/"
-markdown: kramdown
+kramdown: kramdown
 kramdown:
    input: GFM
    hard_wrap: false
